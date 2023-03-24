@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="inner-container flex-container">
+            <h1 class="sr-only">Logo Name</h1>
+            <img src="img/logo.jpg" alt="Logo">
+            <button>Menu</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Memberships</a></li>
+                </ul>
+            </nav>
+            <form action="#" method="get" name="search-bar" role="search">
+                <label for="searchbar" class="sr-only">Search</label>
+                <input id="searchbar" name="searchbar" type="text" placeholder="Search">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="inner-container">
+                <h2>Log In</h2>
+                <form action="#" method="post" name="login">
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
